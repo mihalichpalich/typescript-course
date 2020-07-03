@@ -1,3 +1,4 @@
+"use strict";
 var isFetching = true;
 var isLoading = false;
 var int = 42;
@@ -14,3 +15,14 @@ function sayMyName(name) {
     console.log(name);
 }
 sayMyName('Хайзенберг');
+//для объявления ошибки
+function throwError(message) {
+    throw new Error(message);
+}
+function infinite() {
+    while (true) {
+    }
+}
+var login = 'admin';
+var id1 = 1234;
+var id2 = '1234';

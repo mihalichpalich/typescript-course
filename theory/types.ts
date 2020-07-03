@@ -20,3 +20,22 @@ function sayMyName(name: string): void { //: void - ф-я ничего не во
     console.log(name)
 }
 sayMyName('Хайзенберг');
+
+//для объявления ошибки
+function throwError(message: string): never {
+    throw new Error(message)
+}
+
+function infinite(): never {
+    while (true) {
+
+    }
+}
+
+//собственные типы
+type Login = string;
+type ID = string | number;
+
+const login: Login = 'admin';
+const id1: ID = 1234;
+const id2: ID = '1234';
